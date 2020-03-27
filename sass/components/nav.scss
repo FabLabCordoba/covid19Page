@@ -1,0 +1,17 @@
+.nav {
+    position: relative;
+    padding-top: rem-calc(24);
+    display: flex;
+    justify-content: space-between;
+    &--logo {
+        text-transform: uppercase;
+        padding: rem-calc(10) rem-calc(30);
+        background: white;
+        color: $primary;
+        font-weight: 700;
+        font-size: rem-calc(24);
+    }
+    &--button {
+        margin-top: rem-calc(7);
+    }
+}

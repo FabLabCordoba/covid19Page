@@ -1,0 +1,31 @@
+.map-container {
+    display: flex;
+    padding-bottom: rem-calc(45);
+    justify-content: space-between;
+    &--map {
+        margin-top: rem-calc(45);
+        width: 58%;
+    }
+    &--info {
+        width: 38%;
+    }
+}
+
+.stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.stat {
+    text-align: center;
+    color: $primary;
+    &--number {
+        font-size: rem-calc(36);
+        margin-bottom: rem-calc(32);
+    }
+
+    &--text {
+        font-size: rem-calc(18);
+    }
+}

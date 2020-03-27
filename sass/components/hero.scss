@@ -1,0 +1,30 @@
+.hero {
+    display: flex;
+    color: white;
+    align-items: center;
+    height: rem-calc(500);
+    justify-content: space-between;
+    &--img {
+        width: 40%;
+        img {
+            width: 100%;
+            max-height: rem-calc(247);
+        }
+    }
+    &--info {
+        width: rem-calc(440);
+        text-align: left;
+    }
+    &--title {
+        font-size: rem-calc(44);
+        line-height: rem-calc(64);
+        margin-bottom: rem-calc(10);
+        font-weight: bold;
+    }
+
+    &--text {
+        font-size: rem-calc(18);
+        font-weight: rem-calc(24);
+        margin-bottom: rem-calc(25);
+    }
+}

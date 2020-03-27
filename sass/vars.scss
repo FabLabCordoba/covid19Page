@@ -1,0 +1,33 @@
+@function rem-calc($size) {
+    $remSize: $size / 16;
+    @return #{$remSize}rem;
+}
+
+$background:  linear-gradient(293deg, #8d66f0 43%, #5436dd);
+
+$primary: #6a33ea;
+$background-alt: #f5f9ff;
+$text-color: #3e3e3e;
+
+
+$mainNavHeightLarge: rem-calc(153);
+$mainNavHeightSmall: rem-calc(100);
+
+
+@mixin at-small() {
+    @media (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin at-medium() {
+    @media (min-width: 768px) and (max-width: 1023px) {
+        @content;
+    }
+}
+
+@mixin at-large() {
+    @media (min-width: 1024px){
+        @content;
+    }
+}
