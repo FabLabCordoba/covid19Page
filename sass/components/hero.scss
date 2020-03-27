@@ -8,7 +8,7 @@
         width: 40%;
         img {
             width: 100%;
-            max-height: rem-calc(247);
+            max-height: 247px;
         }
     }
     &--info {
@@ -18,13 +18,13 @@
     &--title {
         font-size: rem-calc(44);
         line-height: rem-calc(64);
-        margin-bottom: rem-calc(10);
+        margin-bottom: 10px;
         font-weight: bold;
     }
 
     &--text {
         font-size: rem-calc(18);
         font-weight: rem-calc(24);
-        margin-bottom: rem-calc(25);
+        margin-bottom: 25px;
     }
 }

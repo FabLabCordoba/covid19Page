@@ -1,9 +1,9 @@
 .map-container {
     display: flex;
-    padding-bottom: rem-calc(45);
+    padding-bottom: 45px;
     justify-content: space-between;
     &--map {
-        margin-top: rem-calc(45);
+        margin-top: 45px;
         width: 58%;
     }
     &--info {
@@ -22,7 +22,7 @@
     color: $primary;
     &--number {
         font-size: rem-calc(36);
-        margin-bottom: rem-calc(32);
+        margin-bottom: 32px;
     }
 
     &--text {

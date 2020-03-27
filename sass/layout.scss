@@ -32,7 +32,7 @@ html, body {
     &--big {
         display: flex;
         &--icon {
-            margin-right: rem-calc(10);
+            margin-right: 10px;
         }
         &--title {
             color: white;
@@ -43,9 +43,9 @@ html, body {
     }
     &--small {
         display: flex;
-        margin: 0 rem-calc(20);
+        margin: 0 20px;
         &--icon {
-            margin-right: rem-calc(10);
+            margin-right: 10px;
         }
         &--title {
             color: white;
@@ -57,7 +57,6 @@ html, body {
 
 .container {
     max-width: rem-calc(940);
-    min-height: rem-calc(940);
     margin: 0 auto;
     padding: 0 rem-calc(42);
     &>.section {
@@ -77,21 +76,21 @@ html, body {
     transition: box-shadow .1s ease-out;
 
     &:hover {
-        box-shadow: rem-calc(1) 0 rem-calc(20) 0 rgba(0, 0, 0, 0.16);
+        box-shadow: 2px 0 20px 0 rgba(0, 0, 0, 0.16);
     }
 
     &_inverted {
         color: #FFF;
         background: $primary;
-        font-size: rem-calc(18);
+        font-size: 18px;
         font-weight: normal;
         padding: rem-calc(10) rem-calc(40);
-        min-width: rem-calc(200);
+        min-width: 200px;
     }
 }
 .section {
     text-align: left;
-    padding: rem-calc(45) 0;
+    padding: 45px 0;
     &_center {
         margin: 0 auto;
         text-align: center;
@@ -99,7 +98,7 @@ html, body {
             text-align: center;
             &--decorator {
                 left: 50%;
-                margin-left: rem-calc(-70);
+                margin-left: -70px;
             }
         }
     }
@@ -108,14 +107,14 @@ html, body {
         line-height: rem-calc(48);
         font-weight: 700;
         position: relative;
-        padding: rem-calc(10) 0;
+        padding: 10px 0;
         text-align: left;
-        margin-bottom: rem-calc(30);
+        margin-bottom: 30px;
         &--decorator {
             position: absolute;
-            bottom: rem-calc(-3);
-            width: rem-calc(140);
-            height: rem-calc(3);
+            bottom: -3px;
+            width: 139px;
+            height: 3px;
             left: 0;
             background-color: $primary;
         }
@@ -125,7 +124,7 @@ html, body {
         font-size: rem-calc(18);
     }
     &--button {
-        margin-top: rem-calc(45);
+        margin-top: 45px;
     }
 }
 
@@ -133,10 +132,10 @@ html, body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding-bottom: rem-calc(45);
+    padding-bottom: 45px;
     &--item {
         width: 23%;
-        margin-bottom: rem-calc(12);
+        margin-bottom: 12px;
         font-weight: 500;
         color: $primary;
         font-size: rem-calc(18);
@@ -145,18 +144,18 @@ html, body {
 
 .select-css {
     display: block;
-    font-size: rem-calc(16);
+    font-size: 16px;
     font-family: sans-serif;
     font-weight: 700;
     color: #444;
     line-height: 1.3;
     padding: .6em 1.4em .5em .8em;
-    min-width: rem-calc(300);
+    min-width: 300px;
     max-width: 100%; 
     box-sizing: border-box;
     margin: 0;
-    border: 0 solid #aaa;
-    box-shadow: rem-calc(2) 0 rem-calc(10) 0 rgba(0, 0, 0, 0.16);
+    border: 0px solid #aaa;
+    box-shadow: 2px 0 10px 0 rgba(0, 0, 0, 0.16);
     border-radius: 0;
     -moz-appearance: none;
     -webkit-appearance: none;
@@ -176,8 +175,8 @@ html, body {
 }
 .select-css:focus {
     border-color: #aaa;
-    box-shadow: 0 0 rem-calc(1) rem-calc(3) rgba(59, 153, 252, .7);
-    box-shadow: 0 0 0 rem-calc(3) -moz-mac-focusring;
+    box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
+    box-shadow: 0 0 0 3px -moz-mac-focusring;
     color: #222; 
     outline: none;
 }
