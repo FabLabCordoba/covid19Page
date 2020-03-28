@@ -19,6 +19,10 @@ html, body {
     text-align: center;
 }
 
+.homepage {
+    text-decoration: none;
+}
+
 .banner {
     background: linear-gradient(274deg, #8d66f0 100%, #5436dd);;
     display: flex;
@@ -187,4 +191,14 @@ html, body {
 .options {
     display: flex;
     justify-content: space-between;
+}
+
+input[type=number] {
+    height: 34px;
+    font-size: 14px;
+    margin-left: 5px;
+    width: 70px;
+    padding: 3px;
+    color: grey;
+    margin-top: -2em;
 }
