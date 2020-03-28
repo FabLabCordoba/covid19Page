@@ -11,12 +11,12 @@ html, body {
 .background-container {
   text-align: center; }
   .background-container--purple {
-    background: linear-gradient(293deg, #8d66f0 43%, #5436dd); }
+    background: linear-gradient(293deg, #31B1FC 43%, #128ECC); }
   .background-container--bluish {
     background: #f5f9ff; }
 
 .banner {
-  background: linear-gradient(274deg, #8d66f0 100%, #5436dd);
+  background: linear-gradient(274deg, #31B1FC 100%, #128ECC);
   display: flex;
   justify-content: center;
   padding: 1.5rem;
@@ -83,7 +83,7 @@ html, body {
   text-decoration: none;
   border-radius: 1.25rem;
   background-color: #ffffff;
-  color: #6a33ea;
+  color: #31B1FC;
   padding: 0.375rem 2.1875rem;
   display: inline-block;
   font-weight: 500;
@@ -93,7 +93,7 @@ html, body {
     box-shadow: 2px 0 20px 0 rgba(0, 0, 0, 0.16); }
   .button_inverted {
     color: #FFF;
-    background: #6a33ea;
+    background: #31B1FC;
     font-size: 18px;
     font-weight: normal;
     padding: 0.625rem 2.5rem;
@@ -132,7 +132,7 @@ html, body {
       width: 119px;
       height: 3px;
       left: 0;
-      background-color: #6a33ea; }
+      background-color: #31B1FC; }
   .section--info {
     font-size: 1.125rem; }
     @media (max-width: 767px) {
@@ -151,7 +151,7 @@ html, body {
     width: 23%;
     margin-bottom: 12px;
     font-weight: 500;
-    color: #6a33ea;
+    color: #31B1FC;
     font-size: 1.125rem; }
     @media (max-width: 767px) {
       .list--item {
@@ -210,7 +210,7 @@ html, body {
     text-transform: uppercase;
     padding: 0.625rem 1.875rem;
     background: white;
-    color: #6a33ea;
+    color: #31B1FC;
     font-weight: 700;
     font-size: 1.5rem; }
     @media (max-width: 767px) {
@@ -344,7 +344,7 @@ html, body {
 
 .stat {
   text-align: center;
-  color: #6a33ea; }
+  color: #31B1FC; }
   .stat--number {
     font-size: 2.25rem;
     margin-bottom: 32px; }
