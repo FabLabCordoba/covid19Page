@@ -10,8 +10,17 @@
         color: $primary;
         font-weight: 700;
         font-size: rem-calc(24);
+        @include at-small() {
+            padding: rem-calc(10) rem-calc(18);
+            span {
+                display: none;
+            }
+        }
     }
     &--button {
+        @include at-small() { 
+            display: none;
+        }
         margin-top: rem-calc(7);
     }
 }

@@ -19,12 +19,21 @@ html, body {
   background: linear-gradient(274deg, #8d66f0 100%, #5436dd);
   display: flex;
   justify-content: center;
-  padding: 1.5rem 0;
+  padding: 1.5rem;
   display: flex; }
+  @media (max-width: 767px) {
+    .banner {
+      flex-direction: column;
+      align-items: center; } }
   .banner a {
     text-decoration: none; }
   .banner--big {
     display: flex; }
+    .banner--big br {
+      display: none; }
+      @media (max-width: 767px) {
+        .banner--big br {
+          display: inline; } }
     .banner--big--icon {
       margin-right: 10px; }
     .banner--big--title {
@@ -32,15 +41,31 @@ html, body {
       line-height: 3rem;
       font-size: 2.25rem;
       font-weight: 500; }
+      @media (max-width: 767px) {
+        .banner--big--title {
+          font-size: 1.5rem;
+          line-height: 2rem; } }
   .banner--small {
     display: flex;
     margin: 0 20px; }
+    @media (max-width: 767px) {
+      .banner--small {
+        margin: 0 0 20px;
+        width: 320px;
+        text-align: left; } }
     .banner--small--icon {
       margin-right: 10px; }
+      @media (max-width: 767px) {
+        .banner--small--icon {
+          margin-right: 20px; } }
     .banner--small--title {
       color: white;
       font-size: 1.125rem;
       font-weight: 700; }
+      @media (max-width: 767px) {
+        .banner--small--title {
+          font-size: 1rem;
+          font-weight: 500; } }
 
 .container {
   max-width: 58.75rem;
@@ -48,6 +73,11 @@ html, body {
   padding: 0 2.625rem; }
   .container > .section {
     width: 60%; }
+  @media (max-width: 767px) {
+    .container {
+      padding: 0 2rem; }
+      .container > .section {
+        width: 100%; } }
 
 .button {
   text-decoration: none;
@@ -72,6 +102,9 @@ html, body {
 .section {
   text-align: left;
   padding: 45px 0; }
+  @media (max-width: 767px) {
+    .section {
+      padding: 32px 0; } }
   .section_center {
     margin: 0 auto;
     text-align: center; }
@@ -88,15 +121,24 @@ html, body {
     padding: 10px 0;
     text-align: left;
     margin-bottom: 30px; }
+    @media (max-width: 767px) {
+      .section--title {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        padding: 5px 0; } }
     .section--title--decorator {
       position: absolute;
       bottom: -3px;
-      width: 139px;
+      width: 119px;
       height: 3px;
       left: 0;
       background-color: #6a33ea; }
   .section--info {
     font-size: 1.125rem; }
+    @media (max-width: 767px) {
+      .section--info {
+        font-size: 0.875rem;
+        line-height: 1.125rem; } }
   .section--button {
     margin-top: 45px; }
 
@@ -111,6 +153,9 @@ html, body {
     font-weight: 500;
     color: #6a33ea;
     font-size: 1.125rem; }
+    @media (max-width: 767px) {
+      .list--item {
+        width: 48%; } }
 
 .select-css {
   display: block;
@@ -168,8 +213,16 @@ html, body {
     color: #6a33ea;
     font-weight: 700;
     font-size: 1.5rem; }
+    @media (max-width: 767px) {
+      .nav--logo {
+        padding: 0.625rem 1.125rem; }
+        .nav--logo span {
+          display: none; } }
   .nav--button {
     margin-top: 0.4375rem; }
+    @media (max-width: 767px) {
+      .nav--button {
+        display: none; } }
 
 .hero {
   display: flex;
@@ -177,11 +230,18 @@ html, body {
   align-items: center;
   height: 31.25rem;
   justify-content: space-between; }
+  @media (max-width: 767px) {
+    .hero {
+      height: auto;
+      padding: 10px 0 25px; } }
   .hero--img {
     width: 40%; }
     .hero--img img {
       width: 100%;
       max-height: 247px; }
+    @media (max-width: 767px) {
+      .hero--img {
+        display: none; } }
   .hero--info {
     width: 27.5rem;
     text-align: left; }
@@ -190,16 +250,30 @@ html, body {
     line-height: 4rem;
     margin-bottom: 10px;
     font-weight: bold; }
+    @media (max-width: 767px) {
+      .hero--title {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        margin-bottom: 10px;
+        font-weight: bold; } }
   .hero--text {
     font-size: 1.125rem;
-    font-weight: 1.5rem;
+    line-height: 1.5rem;
     margin-bottom: 25px; }
+    @media (max-width: 767px) {
+      .hero--text {
+        font-size: 0.875rem;
+        line-height: 1.125rem;
+        margin-bottom: 20px; } }
 
 .tiles {
   display: flex;
   justify-content: space-between;
   align-content: stretch;
   margin-bottom: 45px; }
+  @media (max-width: 767px) {
+    .tiles {
+      flex-direction: column; } }
 
 .tile {
   width: 32%;
@@ -213,20 +287,45 @@ html, body {
   box-shadow: 2px 0 10px 0 rgba(0, 0, 0, 0.16);
   background-color: #ffffff;
   transition: all .1s ease-out; }
+  @media (max-width: 767px) {
+    .tile {
+      width: auto;
+      height: auto;
+      text-align: left;
+      padding: 20px 16px 20px 8px;
+      flex-direction: row;
+      align-items: center;
+      min-height: 97px;
+      margin-bottom: 32px; } }
   .tile:hover {
     box-shadow: 2px 0 20px 0 rgba(0, 0, 0, 0.16);
     transform: scale(1.02); }
   .tile--img {
     height: 124px;
     margin-bottom: 40px; }
+    @media (max-width: 767px) {
+      .tile--img {
+        height: auto;
+        min-width: 64px;
+        max-width: 64px;
+        margin: 0 18px 0 0; } }
     .tile--img img {
       max-width: 100%;
       max-height: 100%; }
   .tile--title {
     font-size: 1.5rem;
     margin-bottom: 1.125rem; }
+    @media (max-width: 767px) {
+      .tile--title {
+        font-size: 1.125rem;
+        line-height: 1.5rem;
+        margin-bottom: 0.625rem; } }
   .tile--text {
     font-size: 0.875rem; }
+    @media (max-width: 767px) {
+      .tile--text {
+        font-size: 0.875rem;
+        line-height: 1.125rem; } }
 
 .map-container {
   display: flex;

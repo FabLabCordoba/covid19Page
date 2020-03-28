@@ -23,14 +23,25 @@ html, body {
     background: linear-gradient(274deg, #8d66f0 100%, #5436dd);;
     display: flex;
     justify-content: center;
-    padding: rem-calc(24) 0;
+    padding: rem-calc(24);
     display: flex;
+    @include at-small {
+        flex-direction: column;
+        align-items: center;
+    }
     a {
         text-decoration: none;
     }
-
+    
     &--big {
         display: flex;
+        br {
+            display: none;
+            @include at-small {
+                display: inline;
+            }
+        }
+        
         &--icon {
             margin-right: 10px;
         }
@@ -39,18 +50,34 @@ html, body {
             line-height: rem-calc(48);
             font-size: rem-calc(36);
             font-weight: 500;
+            @include at-small { 
+                font-size: rem-calc(24);
+                line-height: rem-calc(32);
+            }
         }
     }
     &--small {
         display: flex;
         margin: 0 20px;
+        @include at-small {  
+            margin: 0 0 20px;
+            width: 320px;
+            text-align: left;
+        }
         &--icon {
             margin-right: 10px;
+            @include at-small {  
+                margin-right: 20px;
+            }
         }
         &--title {
             color: white;
             font-size: rem-calc(18);
             font-weight: 700;
+            @include at-small { 
+                font-size: rem-calc(16);
+                font-weight: 500;
+            }
         }
     }
 }
@@ -59,8 +86,16 @@ html, body {
     max-width: rem-calc(940);
     margin: 0 auto;
     padding: 0 rem-calc(42);
+    
     &>.section {
         width: 60%;
+    }
+
+    @include at-small() { 
+        padding: 0 rem-calc(32);
+        &>.section {
+            width: 100%;
+        }
     }
 }
 
@@ -91,6 +126,9 @@ html, body {
 .section {
     text-align: left;
     padding: 45px 0;
+    @include at-small {
+        padding: 32px 0;
+    }
     &_center {
         margin: 0 auto;
         text-align: center;
@@ -110,10 +148,15 @@ html, body {
         padding: 10px 0;
         text-align: left;
         margin-bottom: 30px;
+        @include at-small {
+            font-size: rem-calc(24);
+            line-height: rem-calc(32);
+            padding: 5px 0;
+        }
         &--decorator {
             position: absolute;
             bottom: -3px;
-            width: 139px;
+            width: 119px;
             height: 3px;
             left: 0;
             background-color: $primary;
@@ -122,6 +165,10 @@ html, body {
     
     &--info {
         font-size: rem-calc(18);
+        @include at-small { 
+            font-size: rem-calc(14);
+            line-height: rem-calc(18);
+        }
     }
     &--button {
         margin-top: 45px;
@@ -139,6 +186,9 @@ html, body {
         font-weight: 500;
         color: $primary;
         font-size: rem-calc(18);
+        @include at-small {
+            width: 48%;
+        }
     }
 }
 
