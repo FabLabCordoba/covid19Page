@@ -1,0 +1,49 @@
+.hero {
+    display: flex;
+    color: white;
+    align-items: center;
+    height: rem-calc(500);
+    justify-content: space-between;
+    @include at-small { 
+        height: auto;
+        padding: 10px 0 25px;
+    }
+    
+    &--img {
+        width: 40%;
+        img {
+            width: 100%;
+            max-height: 247px;
+        }
+        @include at-small { 
+            display: none;
+        }
+    }
+    &--info {
+        width: rem-calc(440);
+        text-align: left;
+    }
+    &--title {
+        font-size: rem-calc(44);
+        line-height: rem-calc(64);
+        margin-bottom: 10px;
+        font-weight: bold;
+        @include at-small { 
+            font-size: rem-calc(24);
+            line-height: rem-calc(32);
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+    }
+
+    &--text {
+        font-size: rem-calc(18);
+        line-height: rem-calc(24);
+        margin-bottom: 25px;
+        @include at-small { 
+            font-size: rem-calc(14);
+            line-height: rem-calc(18);
+            margin-bottom: 20px;
+        }
+    }
+}
