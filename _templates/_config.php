@@ -3,6 +3,7 @@
 // Creamos un array de 2 dimensiones, donde ponemos el nombre de la pronvicia y el KEY de MercadoPago asociado a la misma
 $provincias = [
     'Cordoba' => 'APP_USR-3773199923955631-032723-f3d951ba68866d3f78e8e060877cb0a5-538652796',
+    'Salta' => 'APP_USR-7942801942852899-032923-1b0a5f8142b01fd8013317b60ff16b16-127233352',
     // aca pueden agregar mas usando el mismo formato de la linea de arriba
 ];
 
